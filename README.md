@@ -1,0 +1,2 @@
+# redirectBot
+redirection discord bot
