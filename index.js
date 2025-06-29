@@ -19,7 +19,7 @@ app.post('/speak', async (req, res) => {
 
   try {
     const channel = await client.channels.fetch(channelId);
-    await channel.send({ content: message, tts: true });
+    await channel.send({ content: `/tts ${message}`, tts: false });
     res.send('TTS送信成功');
   } catch (err) {
     console.error(err);
